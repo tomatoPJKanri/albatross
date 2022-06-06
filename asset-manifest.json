@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/albatross/static/css/main.6eb037bd.css",
+    "main.js": "/albatross/static/js/main.62e78e91.js",
+    "index.html": "/albatross/index.html",
+    "main.6eb037bd.css.map": "/albatross/static/css/main.6eb037bd.css.map",
+    "main.62e78e91.js.map": "/albatross/static/js/main.62e78e91.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6eb037bd.css",
+    "static/js/main.62e78e91.js"
+  ]
+}
