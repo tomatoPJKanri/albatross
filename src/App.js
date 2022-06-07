@@ -11,7 +11,7 @@ const App = () => {
   return (
     <>
       <Helmet>
-        <title>ALBATROSS_FORK!</title>
+        <title>ALBATROSS_FORK@@@@@</title>
       </Helmet>
       <Routes>
         <Route path="/login" element={<Login />} />
