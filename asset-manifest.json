@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/albatross/static/css/main.6eb037bd.css",
-    "main.js": "/albatross/static/js/main.c542b758.js",
+    "main.js": "/albatross/static/js/main.6a5ad81b.js",
     "index.html": "/albatross/index.html",
     "main.6eb037bd.css.map": "/albatross/static/css/main.6eb037bd.css.map",
-    "main.c542b758.js.map": "/albatross/static/js/main.c542b758.js.map"
+    "main.6a5ad81b.js.map": "/albatross/static/js/main.6a5ad81b.js.map"
   },
   "entrypoints": [
     "static/css/main.6eb037bd.css",
-    "static/js/main.c542b758.js"
+    "static/js/main.6a5ad81b.js"
   ]
 }
