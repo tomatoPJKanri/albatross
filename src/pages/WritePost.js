@@ -1,17 +1,18 @@
-import React, { useCallback, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
-import Responsive from "../components/common/Responsive";
-import Editor from "../components/post/Editor";
-import PostActionButton from "../components/post/PostActionButton";
-import TagBox from "../components/post/TagBox";
-import HeaderContainer from "../containers/HeaderContainer";
+import React, { useCallback, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import Responsive from '../components/common/Responsive';
+import Editor from '../components/post/Editor';
+import PostActionButton from '../components/post/PostActionButton';
+import TagBox from '../components/post/TagBox';
+import HeaderContainer from '../containers/HeaderContainer';
 import {
   changeField,
   initialize,
   updatePost,
   writePost,
-} from "../modules/write";
+} from '../modules/write';
+import Helmet from 'react-helmet-async';
 
 const WritePost = () => {
   const dispatch = useDispatch();
@@ -23,7 +24,7 @@ const WritePost = () => {
       post: write.post,
       postError: write.postError,
       originalPostId: write.originalPostId,
-    })
+    }),
   );
   const history = useNavigate();
 
@@ -31,7 +32,7 @@ const WritePost = () => {
     (payload) => {
       dispatch(changeField(payload));
     },
-    [dispatch]
+    [dispatch],
   );
 
   const onPublish = () => {
@@ -66,6 +67,9 @@ const WritePost = () => {
   return (
     <>
       <HeaderContainer />
+      <Helmet>
+        <title>ポスト作成 - ALBATROSS</title>
+      </Helmet>
       <Responsive>
         <Editor onChange={onChange} title={title} body={body} />
         <TagBox onChangeTag={onChange} tags={tags} />
