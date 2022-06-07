@@ -1,17 +1,17 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
-import Login from "./pages/Login";
-import PostList from "./pages/PostList";
-import ReadPost from "./pages/ReadPost";
-import Register from "./pages/Register";
-import WritePost from "./pages/WritePost";
-import { Helmet } from "react-helmet-async";
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Login from './pages/Login';
+import PostList from './pages/PostList';
+import ReadPost from './pages/ReadPost';
+import Register from './pages/Register';
+import WritePost from './pages/WritePost';
+import { Helmet } from 'react-helmet-async';
 
 const App = () => {
   return (
     <>
       <Helmet>
-        <title>ALBATROSS_FORK!</title>
+        <title>No more Pull Request!!!</title>
       </Helmet>
       <Routes>
         <Route path="/login" element={<Login />} />
