@@ -12,7 +12,7 @@ import {
   updatePost,
   writePost,
 } from '../modules/write';
-import Helmet from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 
 const WritePost = () => {
   const dispatch = useDispatch();
